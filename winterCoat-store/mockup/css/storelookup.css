@@ -1,0 +1,42 @@
+img {
+    display: block;
+    margin-right: 10in;
+    margin-left: 10in;
+    margin-top: 0in;
+    width: 20%;
+    padding: 10px;
+}
+
+form {
+    padding: 40px 16px;
+    font-size:15pt;
+    text-align: center;
+}
+
+input[type=text] {
+    font-size:14pt;
+    display: inline-block;
+    position:relative;
+    margin-right: 10in;
+    margin-top: 1in;
+    border-radius: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    font-size:14pt;
+    text-align: center;
+    position:relative;
+    margin-right: 10in;
+    margin-top: 0in;
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+}

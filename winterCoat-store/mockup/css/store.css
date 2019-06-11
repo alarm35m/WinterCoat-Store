@@ -1,0 +1,38 @@
+img {
+    display: block;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 60px;
+    padding: 10px;
+}
+
+form {
+    padding: 10px 16px;
+    font-size:15pt;
+}
+
+p {
+    color: whitesmoke;
+}
+
+select {
+    font-size:14pt;
+    display: inline-block;
+    position:relative;
+}
+
+button {
+    font-size:14pt;
+    text-align: center;
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gray;
+}

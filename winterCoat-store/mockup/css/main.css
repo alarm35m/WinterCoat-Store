@@ -1,0 +1,46 @@
+
+html {
+    background-color: #1c2541;
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #444242;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: rgb(64, 167, 141);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

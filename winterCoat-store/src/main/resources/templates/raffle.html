@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Loop Winter Coat Store</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/raffle.css">
+        <!--<script src="js/dropdown.js"></script>-->
+    </head>
+    <body>
+        <h1>Sneaker Raffle</h1>
+        <div class="navbar">
+            <a href="/"> Home</a>
+            <a href="store"> Store</a>
+            <a href="shoppingCart"> Shopping Cart</a>
+            <a class="active" href="raffle"> Raffle</a>
+            <a href="storelookup"> Store Look Up</a>
+        </div>
+        <h2></h2>
+        <div>
+
+            <form action="#" th:action="@{/raffle}" th:object="${customer}" method="post">
+                <select th:field="*{winterCoatId}" name="coatSelection">
+                    <option th:value="${10}" value=10>Jehova Exports</option>
+                    <option th:value="${11}" value=11>Navy Blue</option>
+                    <option th:value="${12}" value=12>Patagonia</option>
+                </select>
+                <p> <input type="text" th:field="*{email}" name="email" placeholder="Email Address" /></p>
+                <p> <input type="text" th:field="*{name}" name="name" placeholder="Name" /></p>
+                <p> <input type="text" th:field="*{phoneNumber}" name="phoneNumber" placeholder="Phone Number" /></p>
+                <button type="submit" onclick="">Submit</button>
+            </form>
+
+
+            <div class="RaffleInfo">
+                <p>RaffleID: <span th:text="${customer.raffleId}">raffleID</span></p>
+                <p>Customer Email: <span th:text="${customer.email}">email</span></p>
+                <p>Customer Name: <span th:text="${customer.name}">name</span></p>
+                <p>Customer Phone Number: <span th:text="${customer.phoneNumber}">phoneNumber</span></p>
+                <p>Brand: <span th:text="${winterCoat.brand}">brand</span></p>
+                <p>Name: <span th:text="${winterCoat.name}">winterCoatName</span></p>
+            </div>
+
+        </div>
+    </body>
+</html>

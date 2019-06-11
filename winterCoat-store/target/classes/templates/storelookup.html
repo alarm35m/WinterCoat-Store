@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Loop Winter Coat Store</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/storelookup.css">
+    </head>
+    <body>
+        <h1>Store Look Up</h1>
+        <div class="navbar">
+            <a href="/"> Home</a>
+            <a href="store"> Store</a>
+            <a href="shoppingCart"> Shopping Cart</a>
+            <a href="raffle"> Raffle</a>
+            <a class="active" href="storelookup"> Store Look Up</a>
+        </div>
+        <h2></h2>
+
+        <form action="#" th:action="@{/storelookup}" th:object="${store}" method="post">
+            <p> <input type="text" th:field="*{zip}" name="zip" placeholder="Zip Code" /></p>
+            <button type="lookItUpButton" class="btn btn-default">Look it up</button>
+        </form>
+
+        <p>Store Name: <span th:text="${store.name}">storeName</span></p>
+        <p>Store Address: <span th:text="${store.street}">storeAddress</span></p>
+        <p> <span th:text="${store.city}"></span></p>
+        <p> <span th:text="${store.zip}"></span></p>
+        
+        <img src="images/googleMaps.png"></img>
+    </body>
+</html>
